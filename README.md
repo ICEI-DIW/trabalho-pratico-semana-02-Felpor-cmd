@@ -9,4 +9,4 @@
 ## Print da tela da página criad
 
 <img src="public\assets\ImagemSite1.png" alt = img >
-<img src="public\assets\ImagemSite2.png" alt = img >
+<img src="public\assets\Site2.png" alt = img >
