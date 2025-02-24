@@ -1,0 +1,227 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(Montserrat-Regular.ttf)
+}
+
+@font-face {
+    font-family: 'NothingYouCouldDo';
+    src: url(NothingYouCouldDo-Regular.ttf)
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(Inter-Regular.ttf)
+}
+
+
+html {
+    border: solid 4px #000000;
+}
+
+body { 
+    background-color: #f5ece1;
+    font-size: 24px;
+    background-image: url(assets/MainPhoto.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0
+}
+
+.cabecario { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 10vh;
+}
+
+.numero {
+    font-family: 'NothingYouCouldDo';
+    margin: 1rem .5rem;
+}
+
+.links {
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+}
+
+.links a {
+    font-size: 24px;   
+    font-family: 'Montserrat'; 
+    color: #000000;
+    margin: 1rem .5rem;
+    text-decoration: none;
+    position: relative;
+}
+
+.links a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: #000000;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+
+.links a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
+.profile-conteiner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+}
+
+.profile-conteiner div {
+   padding-top: 2rem;
+   color: white;
+   font-family: "Inter";
+}
+
+.profile img {
+    border-radius: 100%;
+    border: 5px solid black;
+    height: 300px;
+}
+
+.gradient img {
+    width: 100%;
+    height: 500px;
+}
+
+.cabecarioCurriculo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5ece1;
+}
+
+.fesda {
+    flex-direction: column;
+    width: 55%;
+    margin-left: 4rem;
+}
+
+.Nome {
+    font-size: 70px;
+    font-family: "Inter";
+    color: #1D3C58;
+    font-style: bold;
+    padding-bottom: 2rem;
+}
+
+.Curso {
+    font-size: 30px;
+    font-family: "Inter";
+    color: #2986DA;
+    padding-bottom: 2rem;
+}
+
+.Info {
+    font-family: "Inter";
+    font-size: 20px;
+    color: #1D3C58;
+    padding-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 60% 0%;
+}
+
+.Info div {
+    padding-top: .5rem;
+}
+
+.line1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 5rem 1rem;
+}
+
+.linguas {
+    width: 20%;
+    align-items: center;
+}
+
+.LinguasTextTitle{
+    text-align: center;
+    color: #2986DA;
+    text-decoration: underline;
+    font-family: "Inter";
+    padding-bottom: 2rem;
+    font-size: 25px;
+}
+
+.LinguasText{
+    font-family: "Inter";
+    padding: 1rem;
+}
+
+.conteiner-Main{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    height: 100%;
+    width: 70%;
+    padding: 0rem 5rem;
+}
+
+.ExperienciaTextTitle{
+    font-family: "Inter";
+    font-size: 30px;
+    color: #2986DA;
+    padding-bottom: 2rem;
+}
+
+.ExperienciaText{
+    font-family: "Inter";
+    font-size: 20px;
+    color: #000000;
+    padding-bottom: 2rem;
+}
+
+.EducacaoTextTitle{
+    font-family: "Inter";
+    font-size: 30px;
+    color: #2986DA;
+    padding-bottom: 2rem;
+}
+
+.EducacaoText{
+    font-family: "Inter";
+    font-size: 20px;
+    color: #000000;
+    padding-bottom: 2rem;
+}
+
+.rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem 0rem;
+}
+
+.divRodape{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.divRodape img {
+    margin: .5rem;
+}
